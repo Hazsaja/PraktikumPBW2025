@@ -1,0 +1,20 @@
+.apakeq{
+    color: blue;
+    font-size: 24px;
+    font-family: Arial;
+    width: fit-content;
+    display: flex;
+    justify-self: center;
+}
+
+.apakeq:hover{
+    font-size: 24px;  
+}
+
+.pKali{
+    background-color: yellow; 
+    font-weight: bold;
+    padding: 20px;
+    display: flex;
+    justify-self: center;
+}
