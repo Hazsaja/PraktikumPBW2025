@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333333;
+}
+
+
+header{
+    background-color: #2E7D32;
+    text-align: center;
+    padding: 60px 20px;
+    background-image: url(img/Background_sawit.png);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+header h1{
+    color: #FFFFFF;
+    font-size: 32px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+}
+
+nav{
+    background-color:#1B5E20;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav ul{
+    list-style: none;
+}
+
+nav ul li{
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a{
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3 ease;
+}
+
+nav ul li a:hover{
+    color: #FFB74D;
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    max-width: max-content;
+    margin: 0 auto;
+    gap: 20px;
+
+}
+
+.content{
+    flex: 2;
+    padding: 20px;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    border-top: 4px solid #4CAF50;
+}
+
+.content h2{
+    color: #2E7D32;
+    margin-bottom: 15px;
+}
+
+.sidebar{
+    flex: 1;
+    padding: 20px;
+    background-color: #F1F8E9;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.sidebar h2{
+    color: #E65100;
+    margin-bottom: 15px;
+}
+
+footer{
+    text-align: center;
+    padding: 10px;
+    background-color: #263238;
+    color: #FFFFFF;
+    margin-top: 20px;
+}
+
+footer p{
+    color: #B0BEC5;
+}
+
+.btn{
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #E65100;
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-top: 20px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.btn:hover{
+    background-color: #FF9800;
+    transform: translateY(-2px);
+    color: #FFFFFF;
+}
