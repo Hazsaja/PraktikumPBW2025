@@ -10,7 +10,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
             if (!isNaN(uang) && uang >= rawTotal) {
                 const kembalian = uang - rawTotal;
-                // Format angka ke format Rupiah Indonesia
                 inputKembalian.value = "Rp " + new Intl.NumberFormat('id-ID').format(kembalian);
                 inputKembalian.style.color = "#2E7D32"; 
                 inputKembalian.style.fontWeight = "bold";
