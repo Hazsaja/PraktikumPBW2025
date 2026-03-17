@@ -98,7 +98,6 @@ foreach ($_SESSION['cart'] as $item) {
                 <?php 
                 $no = 1;
                 foreach($_SESSION['cart'] as $item): 
-                    // Menentukan warna badge (Katalog vs Manual)
                     $badgeClass = ($item['sumber'] === 'Katalog') ? 'bg-katalog' : 'bg-manual';
                 ?>
                 <tr>

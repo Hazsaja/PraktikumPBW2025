@@ -217,12 +217,12 @@ button:active {
 }
 
 .struk-print {
-    font-family: "Times New Roman", Times, serif; /* Sesuai dengan font gambar */
+    font-family: "Times New Roman", Times, serif; 
     color: #000;
 }
 
 .struk-print * {
-    color: #000; /* Memaksa warna hitam */
+    color: #000; 
 }
 
 .struk-print h2 {
