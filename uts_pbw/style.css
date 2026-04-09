@@ -1,0 +1,284 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+}
+
+body {
+    background-color: #f4f7f6;
+}
+
+.header {
+    background-color: #2e7d32;
+    color: white;
+    text-align: center;
+    padding: 15px 20px;
+    font-size: 24px;
+    font-weight: bold;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.upper {
+    margin: 20px;
+}
+
+.box {
+    background-color: #ffffff;
+    border: 2px solid #2e7d32;
+    border-radius: 8px;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.total {
+    width: 100%;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: right;
+    border: none;
+    background: transparent;
+    color: #2e7d32;
+    outline: none;
+}
+
+.under {
+    margin: 0 20px 20px 20px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+.under-box.left {
+    width: 65%;
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    height: fit-content;
+    min-height: 500px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    border-bottom: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #f8f9fa;
+    font-weight: 600;
+}
+
+.badge {
+    font-size: 11px;
+    padding: 3px 6px;
+    border-radius: 4px;
+    color: white;
+    margin-top: 4px;
+    display: inline-block;
+}
+
+.bg-katalog {
+    background-color: #1976d2;
+}
+
+.bg-manual {
+    background-color: #e65100;
+}
+
+.under-box.right {
+    width: 35%;
+    background-color: white;
+    border-radius: 8px;
+    padding: 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    height: fit-content;
+}
+
+.right-nama-harga, .right-change {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.right-quantity-button, .button-style {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 5px;
+}
+
+input[type="text"], input[type="number"] {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+input[type="text"]:focus, input[type="number"]:focus {
+    border-color: #2e7d32;
+    outline: none;
+}
+
+button {
+    flex: 1;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.2s;
+    color: white;
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+.enterinput {
+    background-color: #2e7d32;
+}
+
+.enterinput:hover {
+    background-color: #1b5e20;
+}
+
+.removeinput {
+    background-color: #e53935;
+}
+
+.removeinput:hover {
+    background-color: #c62828;
+}
+
+.printinput {
+    background-color: #546e7a;
+    width: 100%;
+}
+
+.printinput:hover {
+    background-color: #37474f;
+}
+
+
+.model {
+    display: none; 
+    position: fixed; 
+    z-index: 1000; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    background-color: rgba(0,0,0,0.6); 
+    align-items: center;
+    justify-content: center;
+}
+
+.model-content {
+    background-color: #fff;
+    padding: 30px;
+    border: 3px solid #000;
+    width: 500px;
+    max-height: 90vh;
+    overflow-y: auto;
+    position: relative;
+    border-radius: 4px;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    color: #888;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close-btn:hover {
+    color: #000;
+}
+
+.struk-print {
+    font-family: "Times New Roman", Times, serif; 
+    color: #000;
+}
+
+.struk-print * {
+    color: #000; 
+}
+
+.struk-print h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.struk-print hr {
+    border: none;
+    border-top: 1px solid #000;
+    margin-bottom: 15px;
+}
+
+.struk-print p {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.struk-print strong {
+    font-weight: bold;
+    font-size: 19px;
+}
+
+.real-print-btn {
+    margin-top: 25px;
+    background-color: #2e7d32;
+    width: 100%;
+    padding: 12px;
+}
+
+.real-print-btn:hover {
+    background-color: #1b5e20;
+}
+
+
+@media print {
+    body * {
+        visibility: hidden;
+    }
+    #printmodel, #printmodel * {
+        visibility: visible;
+    }
+    #printmodel {
+        position: absolute;
+        left: 0;
+        top: 0;
+        background-color: transparent;
+        display: block;
+    }
+    .model-content {
+        border: none;
+        width: 100%;
+        padding: 0;
+    }
+    .close-btn, .real-print-btn {
+        display: none !important;
+    }
+}
