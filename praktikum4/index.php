@@ -115,9 +115,9 @@ foreach ($_SESSION['cart'] as $item) {
             </table>
         </div>
         
-        <form method="POST" class="under-box right">
+    <form method="POST" class="under-box right">
             
-            <form method="POST" class="under-box right">
+         <form method="POST" class="under-box right">
             
             <div class="right-nama-harga">
                 <input type="text" name="namabarang" class="namabarang" placeholder="Nama Barang (Coba: buku / pensil)" required>
