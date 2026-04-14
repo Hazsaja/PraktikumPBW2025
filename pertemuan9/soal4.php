@@ -11,7 +11,6 @@ if ($_SERVER["REQUEST_METHOD"] == "GET") {
 
    $hasil = ($angka % 2 == 0) ? 'Genap' : 'Ganjil';
    $string = "Angka yang dimasukan adalah " . $hasil;
-   
 }
 
 ?>

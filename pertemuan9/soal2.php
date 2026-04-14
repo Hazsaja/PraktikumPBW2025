@@ -19,7 +19,6 @@ if ($_SERVER["REQUEST_METHOD"] == "GET"){
     $string = implode(", ", $filter);
 }
 
-
 ?>
 
 <div>

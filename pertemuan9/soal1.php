@@ -43,6 +43,5 @@ if ($_SERVER["REQUEST_METHOD"] == "GET") {
         <button type="submit">check</button>
     </form>
 
-    
     <output><?php echo  $hasil?></output>
 </div>
