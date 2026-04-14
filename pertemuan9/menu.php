@@ -8,7 +8,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $target = $_POST['target'];
     }
 }
-
 ?>
 
 

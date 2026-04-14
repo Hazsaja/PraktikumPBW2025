@@ -10,7 +10,6 @@ if ($_SERVER["REQUEST_METHOD"] == "GET"){
     $iterasi = $_POST['awal'];
     $batas = $_POST['akhir'];
 
-
     for($iterasi; $iterasi <= $batas; $iterasi++){
         $hasil[] = ($iterasi % 2 == 0) ? $iterasi : NULL;
     }
