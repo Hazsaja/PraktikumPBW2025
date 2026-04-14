@@ -30,6 +30,7 @@ if($_SERVER["REQUEST_METHOD"] == "GET"){
         <br>
         <button type="submit"> Check </button>
     </form>
+    
     <?php foreach($hewan as $value): 
         if(!($value == $hewan[array_key_last($hewan)])):
             echo $value.", ";
