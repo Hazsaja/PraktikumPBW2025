@@ -22,7 +22,7 @@ function tambah($conn, $data)
 
 function hapus($conn ,$id_buku){
 
-	$stmt->prepare("DELETE FROM buku WHERE id = ?");
+	$stmt = $conn->prepare("DELETE FROM buku WHERE id = ?");
 	$stmt->bind_param("i", $id_buku);
 
 	return $stmt->execute();
@@ -38,10 +38,10 @@ function ubah($conn ,$data){
 	$stok = $data['stok'];
 	$id = $data["id"];
 
-	$stmt->prepare("UPDATE buku SET judul = ?, penulis = ?, tahun_terbit = ?, harga = ?, stok = ? WHERE id = ?");
+	$stmt = $conn->prepare("UPDATE buku SET judul = ?, penulis = ?, tahun_terbit = ?, harga = ?, stok = ? WHERE id = ?");
 	$stmt->bind_param("ssidii", $judul, $penulis, $tahun_terbit, $harga, $stok, $id);
 
-	return $stmt->execute()
+	return $stmt->execute();
 }
 
 

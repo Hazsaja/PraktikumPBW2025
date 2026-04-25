@@ -6,10 +6,92 @@
     color: #333;
 }
 
+body{
+     margin: 10px 20px 20px 20px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.left-box{
+    width: 65%;
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    height: fit-content;
+    min-height: 500px; 
+}
+
+.right-box{
+    width: 35%;
+    background-color: white;
+    border-radius: 8px;
+    padding: 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    height: fit-content;
+}
+
+input[type="text"], input[type="number"] {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+button {
+    flex: 1;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.2s;
+    color: grey;
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+.enter, .hapus, .ganti{
+    background-color: whitesmoke;
+}
+
+.enter:hover, .hapus:hover, .ganti:hover {
+    background-color: lightgray;
+    color: black;
+}
+
+.pilih-barang{
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.button-style{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+
+.activated{
+    background-color: lightgray;
+    color: black;
+}
 
 table {
-    width: 100%;
-    border-collapse: collapse;
+    width: 80%;
+    margin-top: 20px;
+    border-collapse: collapse; 
+    border: 1px solid black; 
 }
 
 th,
