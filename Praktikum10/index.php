@@ -21,6 +21,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
  	<meta charset="utf-8">
  	<meta name="viewport" content="width=device-width, initial-scale=1">
  	<title>Document</title>
+ 	<link rel="stylesheet" href="style.css">
  </head>
  <body>
  		<form action="" method="post" >
@@ -40,6 +41,9 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
  				<th>Harga</th>
  				<th>Stok</th>
  			</thead>
+ 			<tbody>
+ 				<td></td>
+ 			</tbody>
  		</table>
  </body>
  </html>
