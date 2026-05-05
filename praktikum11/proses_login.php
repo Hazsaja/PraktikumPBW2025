@@ -23,7 +23,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
         header("Location: index.php");
         exit;
     } else{
-        header("Location: login .php?message=". urlencode("Password salah GOBLOK!!"));
+        header("Location: login .php?message=". urlencode("Password salah BRO!!"));
     }
 
     $stmt->close();
