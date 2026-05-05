@@ -68,10 +68,10 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                         ?>
                         <tr>
                             <td><?php echo $no++ ?></td>
-                            <td><?php echo $row['nama']; ?></td>
-                            <td><?php echo $row['alamat']; ?></td>
-                            <td><?php echo $row['email']; ?></td>
-                            <td><?php echo $row['telepon']; ?></td>
+                            <td><?php echo htmlspecialchars($row['nama']); ?></td>
+                            <td><?php echo htmlspecialchars($row['alamat']); ?></td>
+                            <td><?php echo htmlspecialchars($row['email']); ?></td>
+                            <td><?php echo htmlspecialchars($row['telepon']); ?></td>
                             <td>
                                 <button type="button" class="enter" style="padding: 5px 10px; font-size: 12px;" 
                                 onclick="pilihData(

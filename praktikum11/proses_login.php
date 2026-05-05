@@ -5,7 +5,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     $username = $_POST['username'];
     $password = $_POST['password'];
 
-    $stmt = $conn ->prepare("SELECT id, username, password FROM login WHERE username = ? AND password = ?");
+    $stmt = $conn ->prepare("SELECT id, username, pass FROM login WHERE username = ? AND pass = ?");
     $stmt->bind_param("ss", $username, $password);
     $stmt->execute();
 
@@ -23,7 +23,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
         header("Location: index.php");
         exit;
     } else{
-        header("Location: login .php?message=". urlencode("Password salah BRO!!"));
+        header("Location: login.php?message=". urlencode("Password salah BRO!!"));
     }
 
     $stmt->close();

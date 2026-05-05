@@ -69,11 +69,11 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                         ?>
                         <tr>
                             <td><?php echo $no++ ?></td>
-                            <td><?php echo $row['judul']; ?></td>
-                            <td><?php echo $row['penulis']; ?></td>
-                            <td><?php echo $row['tahun_terbit']; ?></td>
+                            <td><?php echo htmlspecialchars($row['judul']); ?></td>
+                            <td><?php echo htmlspecialchars($row['penulis']); ?></td>
+                            <td><?php echo htmlspecialchars($row['tahun_terbit']); ?></td>
                             <td><?php echo number_format($row['harga'], 0, ',', '.'); ?></td>
-                            <td><?php echo $row['stok']; ?></td>
+                            <td><?php echo htmlspecialchars($row['stok']); ?></td>
                             <td>
                                 <button type="button" class="enter" style="padding: 5px 10px; font-size: 12px;" 
                                 onclick="pilihData(
